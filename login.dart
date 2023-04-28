@@ -1,8 +1,8 @@
 import 'dart:io';
-
+import 'dashboard.dart';
 void main(){
 
-  print("Welcome please press the number to select your identity \n 1. Teacher \n 2. Student");
+  print("\nWelcome select a number from following options to select your identity \n\n 1. Teacher \n 2. Student");
   int? iden = int.parse(stdin.readLineSync()!);
   switch(iden){
     case 1:
@@ -25,11 +25,14 @@ void main(){
       int? batch = int.parse(stdin.readLineSync()!);
       print("Enter Your Department");
       String? dept = stdin.readLineSync();
-      print("Welcome Roll No. ${rollNo} of Batch ${batch} from ${dept}");
+      print("Welcome Roll No. ${rollNo} of Batch ${batch} from ${dept} \n\n");
+      print("Here are your Grades");
+      Grades g1 = Grades();
+      g1.display();
+
     break;
     default:
      print("Enter correct input !!!");  
   }
   
-
-}
+  }
