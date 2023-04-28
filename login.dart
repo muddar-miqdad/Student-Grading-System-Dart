@@ -36,7 +36,7 @@ void main(){
 
       if(id != "abc" || pass != "123a"){
       print("Wrong ID/Password");   }
-      else{  print("Welcome Person 1 !!!");   }
+      else{  print("Welcome Person  !!!");   }
     
     break;
     
